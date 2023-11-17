@@ -5,21 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetLife</title>
     <meta name="description" content="Garanta uma vida longa e cheia de alegria para o seu melhor amigo">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/martin-berube/flat-animal/128/rabbit-icon.png" type="image/x-icon">
+
+    <!--Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Project Css-->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+</head>
+
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="src/img/logo.svg" alt="PetLife">
-        </a>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#clinica">Clínica</a>
-            <a href="#farmacia">Farmácia</a>
-            <a href="#duvidas">Dúvidas</a>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top opacity-75">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="src/img/logo.svg" alt="Pet Life">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clínica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Farmácia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dúvidas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
+    <div class="container-sm">
     <main>
         <section id="inicio">
             <img src="src/img/start-img.svg" alt="" width="580" height="580">
@@ -27,8 +61,10 @@
             <div>
                 <h1>Garanta uma vida longa e cheia de alegria para o seu melhor amigo</h1>
                 <p>A PetLife é o seu refúgio de confiança para o cuidado completo do seu pet. Com profissionais dedicados e serviços abrangentes, oferecemos uma experiência acolhedora e personalizada, garantindo o bem-estar, a saúde e a felicidade dos seus animais de estimação.</p>
-                <a href="https://wa.me/5575991516313" target="_blank">Marque uma consulta</a>
+                <span>
+                <a href="https://wa.me/5575991516313" target="_blank">Marque uma consulta</a> |
                 <a href="#clinica">Conheça nossa clínica</a>
+                </span>
             </div>
         </section>
 
@@ -99,13 +135,14 @@
         <div>
             <strong>Links rápidos</strong>
             <nav>
-                <a href="#inicio">Início</a>
-                <a href="#clinica">Clínica</a>
-                <a href="#farmacia">Farmácia</a>
+                <span>
+                <a href="#inicio">Início</a> |
+                <a href="#clinica">Clínica</a> |
+                <a href="#farmacia">Farmácia</a> |
                 <a href="#duvidas">Dúvidas</a>
+                </span>
             </nav>
         </div>
-
         <div>
             <strong>Encontre-nos</strong>
             <p>WhatsApp: <a href="https://wa.me/5575991516313" target="_blank">(75) 99151-6313</a></p>
@@ -113,6 +150,9 @@
             <p>Endereço: Av. 7 de Setembro, nº 42, Centro</p>
         </div>
     </footer>
-    <div>Desenvolvido por <a href="https://github.com/johncobain" target="_blank">Andrey Gomes</a> na trilha Start na Programação 🤘 da OneBitCode</div>
+
+    <div>Desenvolvido por <a href="https://github.com/johncobain" target="_blank">Andrey Gomes <img width="23" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" alt="GitHub" title="GitHub"/></a> na trilha Start na Programação 🤘 da OneBitCode</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
