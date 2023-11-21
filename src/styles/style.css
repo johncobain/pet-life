@@ -16,6 +16,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 header nav a{
@@ -23,13 +26,21 @@ header nav a{
     font-weight: 600;
     padding: 32px;
     text-decoration: none;
+    transition: .5s;
+    background-color: rgba(20, 20, 20, 0);
+}
+
+header nav a:hover,
+header nav a.selected{
+    color: #ccc;
+    background-color: rgba(20, 20, 20, 1);
 }
 
 #inicio{
     display: flex;
     align-items: center;
     gap: 32px;
-    padding: 24px 80px 128px;
+    padding: 128px 80px;
     position: relative;
 }
 
@@ -72,7 +83,7 @@ h2{
     display: flex;
     align-items: center;
     gap: 64px;
-    padding: 64px 80px;
+    padding: 64px 80px 32px;
 }
 
 #clinica li{
@@ -81,7 +92,7 @@ h2{
 }
 
 #farmacia{
-    padding: 64px 80px;
+    padding: 96px 80px;
     text-align: center;
 }
 
